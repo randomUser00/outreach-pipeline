@@ -2,7 +2,7 @@
 
 A small Next.js page for qualifying one batch of leads, one card at a time. Swipe right or press **D** to accept, swipe left or press **A** to reject, swipe up or press **W** to defer, and press **S** to undo the last decision. Arrow keys work too. Each card has an optional note.
 
-The styling follows trymagical.app; change the variables at the top of `app/globals.css`, the wordmark in `app/LeadBoard.tsx` and `public/hat.webp` to rebrand it.
+To restyle it, change the variables at the top of `app/globals.css`.
 
 ## Run a batch
 

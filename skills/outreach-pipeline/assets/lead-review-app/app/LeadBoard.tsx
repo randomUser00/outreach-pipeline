@@ -96,20 +96,7 @@ export default function LeadBoard({
   return (
     <main>
       <header className="top">
-        <h1>
-          <span className="wordmark" role="img" aria-label="Magical">
-            <span aria-hidden="true">
-              mag
-              <span className="wordmark-i">
-                ı
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="wordmark-hat" src="/hat.webp" alt="" />
-              </span>
-              cal
-            </span>
-          </span>
-          <span className="title">Lead review</span>
-        </h1>
+        <h1>Lead review</h1>
         <p className="muted">
           {batch} · {decided} of {leads.length} decided
         </p>
@@ -158,6 +145,13 @@ export default function LeadBoard({
       ) : (
         <Summary leads={leads} decisions={decisions} onReopen={(id) => post(id, null).catch(() => setError("Couldn't reopen."))} />
       )}
+
+      <footer className="credit">
+        Made by the team behind{" "}
+        <a href="https://trymagical.app" target="_blank" rel="noreferrer">
+          Magical
+        </a>
+      </footer>
     </main>
   );
 }
