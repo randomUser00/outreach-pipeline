@@ -86,6 +86,8 @@ Show the sender, recipient, channel, email subject if applicable, and full propo
 
 Before sending any message or batch, display every message in full in the chat itself: sender, recipient, channel, the complete subject line, and the complete body verbatim as it will be sent. A file path, draft link, summary, or excerpt does not count as showing it. Then get explicit confirmation of the subject and body; the approval question should refer to the messages shown above rather than restate or abbreviate them.
 
+When the user supplies their own copy, subject, or per-lead personal touches, use them verbatim. Do not add parentheticals, connective phrases, hooks, or rewording, and do not substitute a different subject. If a touch needs new wording to fit the template, show that exact wording as its own proposed change and get approval before using it. In the full preview, flag every place a message differs from the user's template.
+
 For Gmail, create a connector draft when supported and show its exact content for review; send the approved draft or exact approved message using the connector. For LinkedIn, open the verified profile/conversation in the signed-in browser, verify the recipient, and enter the approved text. If a connection request or InMail is required, present that actual action and content for review rather than assuming approval of an ordinary message covers it.
 
 Before sending, recheck qualification, exclusions, suppression, existing sent records, fresh replies, and the approved version. Have the CRM owner acknowledge a durable send-intent record. Reconcile any unresolved previous attempt first.
