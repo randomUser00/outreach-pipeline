@@ -1,0 +1,16 @@
+{
+  "batch": "Batch 2 (example)",
+  "leads": [
+    {
+      "id": "lead-0001",
+      "name": "Jordan Example",
+      "headline": "MS, RDN, Founder, Example Nutrition (Austin, TX; virtual in 12 states)",
+      "segment": "independent RD practice",
+      "email": "hello@example.com",
+      "linkedin": "https://linkedin.com/in/jordan-example",
+      "fit": "Practice site says clients log meals in a shared food journal between sessions.",
+      "uncertainty": "Email is a generic practice inbox, not a personal address.",
+      "sourceUrls": ["https://example.com/about", "https://example.com/services"]
+    }
+  ]
+}

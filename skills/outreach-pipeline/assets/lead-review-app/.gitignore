@@ -1,0 +1,7 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+data/leads.json
+data/decisions.json
+data/decisions-log.jsonl

@@ -68,6 +68,10 @@ Stream candidates to the CRM owner as they arrive. Stop accumulating new work wh
 
 Present a compact candidate card: name, role/company, contact route, why they may fit, source links, and material uncertainties. Ask the user to **qualify, reject, or defer**. Review one at a time unless the user requests batch decisions. Research recommendations are not user qualification.
 
+Use the lead review app in [assets/lead-review-app](assets/lead-review-app/README.md) for each batch. It shows one card at a time with accept, reject and defer controls (swipe, or the keys D, A and W, with S to undo). Copy the app into the campaign folder (for example `review/batch-N/`), never running it from the downloaded skill directory. Write `data/leads.json` from verified candidate records only, run `npm ci` and `npm run dev -- -p <free port>` in the background, open the page in the browser for the user, and give them the URL. Add candidates to `leads.json` as they stream in; the user reloads to see them.
+
+The app writes only `data/decisions.json` and `data/decisions-log.jsonl`; it never edits the CRM. A click in the app is the user's explicit decision: accept means qualify, reject means reject, defer means defer, and `cleared` undoes an earlier decision. When the user says they are done, or when checking during the session, read the log and relay each new entry in order, with its note and timestamp, to the CRM owner, waiting for acknowledgment. Treat notes as the user's instructions for that lead (for example a personal touch to add), confirming anything ambiguous. If the app cannot run, present the cards in chat one at a time instead.
+
 Persist explicit qualification decisions through the CRM owner. Pending/deferred leads retain an unset qualification value; rejection is `No`, acceptance is `Yes`. Rejected leads do not reach Intent. A qualified person without a usable contact route may be researched further, but cannot be sent a message. New leads can arrive while earlier leads are reviewed; avoid concurrent competing questions to the user.
 
 ## 5. Call Intent for qualified leads
