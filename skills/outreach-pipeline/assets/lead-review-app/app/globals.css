@@ -140,4 +140,15 @@ kbd {
 .round span { white-space: nowrap; }
 
 .credit { position: fixed; left: 0; right: 0; bottom: 14px; text-align: center; font-size: 12px; color: rgba(255, 255, 255, .4); }
-.credit a { color: var(--muted); }
+.credit { display: flex; justify-content: center; align-items: baseline; gap: 6px; }
+/* The Magical wordmark, with the hat in place of the dot on the "i". */
+.wordmark {
+  display: inline-block; font-size: 17px; font-weight: 600; letter-spacing: -.055em; line-height: 1;
+  white-space: nowrap; color: var(--ink-soft); text-decoration: none; transition: color .2s;
+}
+.wordmark:hover { color: var(--ink); }
+.wordmark-i { position: relative; display: inline-block; }
+.wordmark-hat {
+  position: absolute; left: 50%; bottom: .7em; width: .48em; height: auto;
+  translate: -45% 0; rotate: -5deg; transform-origin: 45% 100%;
+}

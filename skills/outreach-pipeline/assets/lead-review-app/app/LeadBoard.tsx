@@ -148,8 +148,16 @@ export default function LeadBoard({
 
       <footer className="credit">
         Made by the team behind{" "}
-        <a href="https://trymagical.app" target="_blank" rel="noreferrer">
-          Magical
+        <a className="wordmark" href="https://trymagical.app" target="_blank" rel="noreferrer" aria-label="Magical">
+          <span aria-hidden="true">
+            mag
+            <span className="wordmark-i">
+              ı
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="wordmark-hat" src="/hat.webp" alt="" />
+            </span>
+            cal
+          </span>
         </a>
       </footer>
     </main>
